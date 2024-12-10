@@ -11,21 +11,57 @@
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     </head>
     <main>
-        <div class="container">
-            <div class="form-container">
+        <div class="main-container">
+            <div class="form-container" id="form">
                 <div class="name-subname">
-
+                    <div class="name">Nome Cognome</div>
+                    <input type="text" id="name-field">
                 </div>
                 <div class="travel-lenght">
-
+                    <div class="path-km">km da percorrere</div>
+                    <input type="number" id="km-field" min="1">
                 </div>
                 <div class="age-range">
-
+                    <div class="age-selection">Fascia d'età</div>
+                    <select name="seleziona-età" id="age-field">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="minorenne">Maggiorenne</option>
+                        <option value="Over 65">Over 65</option>
+                    </select>
                 </div>
             </div>
-            <div class="buttons">
-                <button></button>
-                <button></button>
+            <div class="buttons-container">
+                <button id="submit" type="button" name="button">Genera</button>
+                <button id="reset" type="button" name="button">Annulla</button>
+            </div>
+        </div>
+
+        <div class="ticket-container">
+            <h2>IL TUO BIGLIETTO</h2>
+            <div class="card-container">
+                <h3>DETTAGLIO PASSEGGERI</h3>
+                <div class="row">
+                    <div class="col-name">
+                        <h3>NOME PASSEGGERO</h3>
+                        <div class="name" id="show-name">Nome cognome</div>
+                    </div>
+                    <div class="col-table">
+                        <table>
+                            <tr id="ticket-info">
+                                <th>Offerta</th>
+                                <th>Carrozza</th>
+                                <th>Codice CP</th>
+                                <th>Costo Biglietto</th>
+                            </tr>
+                            <tr>
+                                <td>Biglietto</td>
+                                <td>N carrozza</td>
+                                <td>N CP</td>
+                                <td>Prezzo</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

@@ -9,3 +9,9 @@
 body{
     background-color: #b91547;
 }
+
+.main-container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
