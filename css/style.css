@@ -18,6 +18,10 @@ body{
 /* ---------------
     form
 -----------------*/
+h1{
+    text-align: center;
+    color: white;
+}
 
 #create-ticket-form{
     background-color: white;
@@ -50,6 +54,12 @@ body{
         ticket
 ------------------------*/
 
+h2{
+    text-align: center;
+    color: white;
+}
+
+
 .card-container {
     background-color: white;
     border-radius: 20px;
@@ -58,3 +68,26 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+
+.row{
+border-top: 1px solid black;
+border-left: 1px solid black;
+border-bottom: 1px solid black;
+display: flex;
+}
+
+.col-name{
+    background-color: rgb(110, 110, 110);
+    color: white;
+    padding: 10px 20px;
+}
+
+.col-table{
+    padding: 10px 20px;
+}
+
+table{
+    border-spacing: 20px 10px;
+}
+
+
