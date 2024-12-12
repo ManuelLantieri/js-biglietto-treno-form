@@ -5,13 +5,56 @@
     padding: 0;
 }
 
+.d-non {
+    display: none;
+}
+
+
 
 body{
     background-color: #b91547;
 }
 
-.main-container{
-    width: 1200px;
+/* ---------------
+    form
+-----------------*/
+
+#create-ticket-form{
+    background-color: white;
+    border-radius: 20px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field-container{
+    padding: 30px;
+    display: flex;
+}
+
+.buttons{
+    padding-bottom: 30px;
+}
+
+.small-container-field{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+
+/* ----------------------
+        ticket
+------------------------*/
+
+.card-container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
 }

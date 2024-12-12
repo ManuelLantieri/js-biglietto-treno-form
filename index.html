@@ -11,39 +11,42 @@
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     </head>
     <main>
-        <div class="main-container">
-            <div class="form-container" id="form">
-                <div class="name-subname">
-                    <div class="name">Nome Cognome</div>
-                    <input type="text" id="name-field">
+        <form id="create-ticket-form">
+            <div class="field-container">
+                <div class="small-container-field">
+                    <label for="full-name">Nome Cognome</label>
+                    <input id="full-name" type="text" placeholder="Inserisci Nome e Cognome" required>
                 </div>
-                <div class="travel-lenght">
-                    <div class="path-km">km da percorrere</div>
-                    <input type="number" id="km-field" min="1">
+                <div class="small-container-field">
+                    <label for="km">Km da percorrere</label>
+                    <input id="km" type="number" min="1" value="1" required>
                 </div>
-                <div class="age-range">
-                    <div class="age-selection">Fascia d'età</div>
-                    <select name="seleziona-età" id="age-field">
-                        <option value="minorenne">Minorenne</option>
-                        <option value="minorenne">Maggiorenne</option>
-                        <option value="Over 65">Over 65</option>
+                <div class="small-container-field">
+                    <label for="age">Fascia d'età</label>
+                    <select id="age">
+                        <option value="adult">Maggiorenne</option>
+                        <option value="under">Minorenne</option>
+                        <option value="over">Over 65</option>
                     </select>
                 </div>
             </div>
-            <div class="buttons-container">
-                <button id="submit" type="button" name="button">Genera</button>
-                <button id="reset" type="button" name="button">Annulla</button>
+            <div class="buttons">
+                <div>
+                    <button id="btn-create" type="submit">Genera</button>
+                    <button id="btn-reset" type="reset">Annulla</button>
+                </div>
             </div>
-        </div>
+        </form>
 
-        <div class="ticket-container">
+        <div id="ticket" class="d-none">
             <h2>IL TUO BIGLIETTO</h2>
             <div class="card-container">
                 <h3>DETTAGLIO PASSEGGERI</h3>
+
                 <div class="row">
                     <div class="col-name">
                         <h3>NOME PASSEGGERO</h3>
-                        <div class="name" id="Title-name">Nome cognome</div>
+                        <div id="passenger-name"></div>
                     </div>
                     <div class="col-table">
                         <table>
@@ -54,10 +57,10 @@
                                 <th>Costo Biglietto</th>
                             </tr>
                             <tr>
-                                <td>Biglietto</td>
-                                <td>N carrozza</td>
-                                <td>N CP</td>
-                                <td>Prezzo</td>
+                                <td><div id="ticket-offert"></div></td>
+                                <td><div id="ticket-train-car"></div></td>
+                                <td><div id="ticket-cp-code"></div></td>
+                                <td><div id="ticket-price"></div></td>
                             </tr>
                         </table>
                     </div>
